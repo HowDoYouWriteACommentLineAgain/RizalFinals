@@ -42,12 +42,28 @@ h2{
     border-radius: 8px;
     padding: 1.5rem 2rem;
     font-size: 80px;
+    text-align: center;
+}
+
+h3{
+    background-color: var(--secondary);
+    border-radius: 8px;
+    padding: 1.5rem 2rem;
+    font-size: 60px;
+    text-align: center;
 }
 
 p{
     color: var(--text-light);   
     padding: 1.5rem 2rem;
     text-align: justify;
+    background-color: var(--accent);
+    min-width: 30%;
+    margin: 0 2rem;
+}
+
+ul{
+    margin-left: 2rem;
 }
 
 @media(prefers-reduced-motion){
@@ -80,13 +96,6 @@ p{
     transform: translateX(0);
 }
 
-.flex-horizontal{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: stretch;
-}
-
 .delayed:nth-child(1) {
     transition-delay:0ms;
 }
@@ -99,11 +108,6 @@ p{
     transition-delay: 240ms;
 }
 
-p{
-    background-color: var(--accent);
-    margin: 0 2rem;
-}
-
 .parallax-bg{
     min-height:110vh;
     background-attachment: fixed !important;
@@ -111,6 +115,22 @@ p{
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+.flex-horizontal{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: stretch;
+}
+
+.flex-vertical{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+}
+
+
 
 #img1{
     background-image: url("https://upload.wikimedia.org/wikipedia/commons/c/c9/Jose_Rizal_full.jpg");
@@ -126,4 +146,8 @@ p{
 
 #barcelona{
     background-image: url("https://upload.wikimedia.org/wikipedia/commons/1/15/Wyngaerde_Barcelona_1563.jpg");
+}
+
+#madrid{
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/7/7d/Plano_del_Ensanche_de_Madrid-1861.jpg");
 }
