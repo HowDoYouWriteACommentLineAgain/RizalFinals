@@ -1,23 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root{
-    --primary:#3B322C;
-    --secondary:#704214;
-    --accent:#a67c52;
+    --primary:#704214;
+    --secondary:#C2B078;
+    --accent:#A67C52 ;
     --background:#F5F1E3;
-    --text:#C2B078;
+    --text:#3B322C;
     --text-light:#ddd;
+
+    --base-font-size:1.8vw;
 }
 
 /*#131313*/
 body{
     background-color: var(--primary);
-    color: var(--text-light);
+    color: var(--text);
     font-family: 'Poppins', sans-serif;
     padding: 0;
     margin:0;
     overflow-x: hidden;
-
+    font-size: var(--base-font-size);
 }
 
 section{
@@ -31,14 +33,15 @@ section{
 
 h1{
     /* background-color: var(--primary); */
-    color: var(--primary);
-    font-size: 100px;
+    color: var(--text);
+    font-size: calc(var(--base-font-size)*4);
     border-radius: 8px;
     padding: 1.5rem 2rem;
 }
 
 h2{
     background-color: var(--secondary);
+    font-size: calc(var(--base-font-size)*2);
     border-radius: 8px;
     padding: 1.5rem 2rem;
     font-size: 80px;
@@ -47,6 +50,8 @@ h2{
 
 h3{
     background-color: var(--secondary);
+    
+    font-size: calc(var(--base-font-size)*1.5);
     border-radius: 8px;
     padding: 1.5rem 2rem;
     font-size: 60px;
@@ -54,27 +59,24 @@ h3{
 }
 
 p{
-    color: var(--text-light);   
+    color: var(--text);   
     padding: 1.5rem 2rem;
     text-align: justify;
     background-color: var(--accent);
-    min-width: 30%;
+    min-width: 30vw;
     margin: 0 2rem;
 }
 
 ul{
     margin-left: 2rem;
+    margin-right: 2rem;
+    padding: 2rem;
+    background-color: var(--primary);
+    color: var(--text-light);
+    min-height: 40vh;
 }
 
-@media(prefers-reduced-motion){
-    .hidden{
-        transition: none;
-    }
 
-    .outOfFrame{
-        transition: none;
-    }
-}
 
 .hidden{
     opacity: 0;
@@ -108,8 +110,16 @@ ul{
     transition-delay: 240ms;
 }
 
+.delayed:nth-child(4) {
+    transition-delay: 430ms;
+}
+
+.delayed:nth-child(5) {
+    transition-delay: 590ms;
+}
+
 .parallax-bg{
-    min-height:110vh;
+    min-height:140vh;
     background-attachment: fixed !important;
     background-position: center;
     background-repeat: no-repeat;
@@ -126,17 +136,33 @@ ul{
 .flex-vertical{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: stretch;
 }
 
+@media(prefers-reduced-motion){
+    .hidden{
+        transition: none;
+    }
 
+    .outOfFrame{
+        transition: none;
+    }
+}
 
+@media screen and (min-width: 480px) {
+
+    
+}
 #img1{
     background-image: url("https://upload.wikimedia.org/wikipedia/commons/c/c9/Jose_Rizal_full.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     filter: sepia(2000);
+}
+
+.sectionBreak{
+
 }
 
 #spanishFlag{
@@ -150,4 +176,27 @@ ul{
 
 #madrid{
     background-image: url("https://upload.wikimedia.org/wikipedia/commons/7/7d/Plano_del_Ensanche_de_Madrid-1861.jpg");
+    background-position: top;
+}
+
+#uncleTom{
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/3/31/UncleTomsCabinCover.jpg");
+    background-position: top;
+}
+
+#paris{
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/4/4b/La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques%2C_Paris_ao%C3%BBt_2014_%282%29.jpg");
+    background-position: center;
+    filter: contrast(1.2),brightness(0.8);
+}
+
+#germany{
+    background: url("https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Garnison-Karte_der_Deutschen_Armee%2C_mit_Angabe_der_Armeccorps_und_Landwehr-Bezirks-Grenzen%2C_sowie_Bezeichnung_der_Servis-Klassen_f%C3%BCr_s%C3%A4mtliche_Garnison-Orte%2C_nebst_einer_unsf%C3%BChrlichen_Liste_aller_Truppenteile_und..._-_btv1b8440036s.jpg/1280px-thumbnail.jpg");
+
+}
+
+#heidelberg{
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/3/37/K%C3%B6nigstuhl%2C_Heidelberg%2C_U-17.jpg");
+    background-position: bottom;
+    filter: contrast(1.2),brightness(0.8);
 }
