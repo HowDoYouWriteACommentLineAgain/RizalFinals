@@ -1,6 +1,6 @@
 const observer = new IntersectionObserver((entries)=>{
     entries.forEach(entry =>{
-        console.table(entry);
+        // console.table(entry);
         if (entry.isIntersecting){
             entry.target.classList.add('show','getIntoFrame');
         }else{
