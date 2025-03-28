@@ -26,8 +26,6 @@ html, body{
     margin:0;
     
     overflow: hidden;
-    scroll-snap-type: y proximity;
-    scroll-behavior: smooth;
 }
 
 section{
@@ -102,7 +100,8 @@ ul{
     height: 100vh;
     overflow-x: hidden;
     overflow-y: scroll;
-    scroll-snap-type: y mandatory;
+    scroll-snap-type: y proximity;
+    scroll-behavior: smooth;
 }
 
 
