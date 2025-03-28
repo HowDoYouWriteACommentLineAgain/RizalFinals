@@ -9,7 +9,7 @@
     --text:#3B322C;
     --text-light:#ddd;
 
-    --base-font-size:1.8vw;
+    --base-font-size:4vh;
 }
 
 /*#131313*/
@@ -26,21 +26,63 @@ html, body{
     margin:0;
     
     overflow: hidden;
-    scroll-snap-type: y mandatory;
+    scroll-snap-type: y proximity;
 }
 
 section{
     display: grid;
     place-items: center;
     align-content: center;
-    min-height: 102vh;
+    min-height: 100vh;
     margin-top: 0;
     margin-bottom: 0;
     background-color: var(--secondary);
 
-    /* scroll-snap-align: start; */
+    scroll-snap-align: start;
 
-    border: 5px red solid !important;
+    /* border: 5px red solid !important; */
+}
+
+h1,h2,h3{
+    font-family: Garamond, Serif;
+    padding: 1.5rem 2rem;
+    border-radius: 8px;
+    text-align: center;
+    margin: 0;
+}
+
+h1{
+    /* background-color: var(--primary); */
+    color: var(--text);
+    font-size: calc(var(--base-font-size)*4);
+}
+
+h2{
+    background-color: var(--secondary);
+    font-size: calc(var(--base-font-size)*2);
+}
+
+h3{
+    background-color: var(--secondary);
+    font-size: calc(var(--base-font-size)*1.2);
+}
+
+p{
+    color: var(--text);   
+    padding: 1.5rem 2rem;
+    text-align: justify;
+    background-color: var(--accent);
+    min-width: 30vw;
+    margin: 0 2rem;
+}
+
+ul{
+    margin-left: 2rem;
+    margin-right: 2rem;
+    padding: 2rem;
+    background-color: var(--primary);
+    color: var(--text-light);
+    min-height: 40vh;
 }
 
 .snap-start{
@@ -59,57 +101,17 @@ section{
     height: 100vh;
     overflow-x: hidden;
     overflow-y: scroll;
-    scroll-snap-type: y proximity;
+    scroll-snap-type: y mandatory;
 }
 
-h1{
-    /* background-color: var(--primary); */
-    color: var(--text);
-    font-size: calc(var(--base-font-size)*4);
-    font-family: Garamond, Serif;
-    border-radius: 8px;
-    padding: 1.5rem 2rem;
-}
 
-h2{
-    background-color: var(--secondary);
-    font-size: calc(var(--base-font-size)*2);
-    font-family: Garamond, Serif;
-    border-radius: 8px;
-    padding: 1.5rem 2rem;
-    font-size: 80px;
-    text-align: center;
+.poem{
+    font-family: 'Courier New', Courier, monospace;
+    /* color: var(--text); */
+    font-weight: bold;
+    font-size: 60%;
+    text-align: left;
 }
-
-h3{
-    background-color: var(--secondary);
-    font-size: calc(var(--base-font-size)*1.5);
-    font-family: Garamond, Serif;
-    border-radius: 8px;
-    padding: 1.5rem 2rem;
-    margin-bottom: 0;
-    font-size: 60px;
-    text-align: center;
-}
-
-p{
-    color: var(--text);   
-    padding: 1.5rem 2rem;
-    text-align: justify;
-    background-color: var(--accent);
-    min-width: 30vw;
-    margin: .2rem 2rem .5rem;
-}
-
-ul{
-    margin-left: 2rem;
-    margin-right: 2rem;
-    padding: 2rem;
-    background-color: var(--primary);
-    color: var(--text-light);
-    min-height: 40vh;
-}
-
 
 
 .hidden{
@@ -232,6 +234,26 @@ ul{
 #heidelberg, .heidelberg{
     background-image: url("https://upload.wikimedia.org/wikipedia/commons/3/37/K%C3%B6nigstuhl%2C_Heidelberg%2C_U-17.jpg");
     background-position: bottom;
+}
+
+#leipzig{
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/5/57/Leipzig_old_Rathaus%2C_circa_1900.jpg");
+    background-position: top;
+}
+
+#dresden{
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/2/27/Dresden_Kreuzkirche_1900.jpg");
+    background-position: center;
+}
+
+#berlin{
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/b/b4/Samariterkirche_Berlin-Friedrichshain_1900.jpg");
+    background-position: center;
+}
+
+#leitmertiz{
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/6/6b/09415-Leitmeritz-1908-Blick_auf_Leitmeritz-Br%C3%BCck_%26_Sohn_Kunstverlag.jpg");
+    background-position: center;
 }
 
 .darkFilter{
