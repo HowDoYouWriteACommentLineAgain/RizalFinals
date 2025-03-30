@@ -15,7 +15,6 @@
 /*#131313*/
 
 html, body{
-    scroll-behavior: smooth;
     background-color: var(--primary);
     color: var(--text);
     font-size: var(--base-font-size);
@@ -32,7 +31,7 @@ section{
     display: grid;
     place-items: center;
     align-content: center;
-    min-height: 100vh;
+    min-height: 102vh;
     margin-top: 0;
     margin-bottom: 0;
     background-color: var(--secondary);
@@ -69,10 +68,11 @@ h3{
 p{
     color: var(--text);   
     padding: 1.5rem 2rem;
+    margin: 0 2rem 2rem 2rem;
     text-align: justify;
     background-color: var(--accent);
     min-width: 30vw;
-    margin: 0 2rem;
+    border-radius: 0.5rem;
 }
 
 ul{
@@ -82,8 +82,14 @@ ul{
     background-color: var(--primary);
     color: var(--text-light);
     min-height: 40vh;
+    border-radius: .5rem;
 }
 
+address{
+    padding: 2rem 4rem;
+    background-color: var(--primary);
+    color: var(--text-light);
+}
 .snap-start{
     scroll-snap-align: start;
 }
@@ -160,6 +166,7 @@ ul{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    will-change: scroll-position;
 }
 
 .sectionBreak{
@@ -180,6 +187,13 @@ ul{
     align-items: stretch;
 }
 
+.flex-vertical-center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+}
+
 @media(prefers-reduced-motion){
     .hidden{
         transition: none;
@@ -194,11 +208,12 @@ ul{
 
     
 }
-#img1{
+.rizal{
     background-image: url("https://upload.wikimedia.org/wikipedia/commons/c/c9/Jose_Rizal_full.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     filter: sepia(2000);
+    height: 20vh;
 }
 
 #spanishFlag{
@@ -218,6 +233,7 @@ ul{
 #uncleTom, .uncleTom{
     background-image: url("https://upload.wikimedia.org/wikipedia/commons/3/31/UncleTomsCabinCover.jpg");
     background-position: top;
+    height: 190vh;
 }
 
 #paris, .paris{
@@ -251,9 +267,9 @@ ul{
     background-position: center;
 }
 
-#leitmertiz{
+#leitmeritz{
     background-image: url("https://upload.wikimedia.org/wikipedia/commons/6/6b/09415-Leitmeritz-1908-Blick_auf_Leitmeritz-Br%C3%BCck_%26_Sohn_Kunstverlag.jpg");
-    background-position: center;
+    background-position: bottom;
 }
 
 .darkFilter{
@@ -267,8 +283,10 @@ ul{
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.4);
+    z-index: 1;
 }
 
 .darkFilter>*{
     color: var(--text-light);
+    z-index: 2;
 }

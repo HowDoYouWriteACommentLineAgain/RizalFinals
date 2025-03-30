@@ -4,13 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css" >
+    <link defer rel="stylesheet" href="style.css" >
     <script defer src="app.js"></script>
+
+    <link rel="preload" as="image" href="https://upload.wikimedia.org/wikipedia/commons/c/c9/Jose_Rizal_full.jpg">
+    <link rel="preload" as="image" href="https://upload.wikimedia.org/wikipedia/commons/7/7d/Flag_of_Spain_%281785%E2%80%931873%2C_1875%E2%80%931931%29.svg">
+    <link rel="preload" as="image" href="https://upload.wikimedia.org/wikipedia/commons/1/15/Wyngaerde_Barcelona_1563.jpg">
+    <link rel="preload" as="image" href="https://upload.wikimedia.org/wikipedia/commons/7/7d/Plano_del_Ensanche_de_Madrid-1861.jpg">
+    <link rel="preload" as="image" href="https://upload.wikimedia.org/wikipedia/commons/3/31/UncleTomsCabinCover.jpg">
+    <link rel="preload" as="image" href="https://upload.wikimedia.org/wikipedia/commons/4/4b/La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques%2C_Paris_ao%C3%BBt_2014_%282%29.jpg">
+    <link rel="preload" as="image" href="https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Garnison-Karte_der_Deutschen_Armee%2C_mit_Angabe_der_Armeccorps_und_Landwehr-Bezirks-Grenzen%2C_sowie_Bezeichnung_der_Servis-Klassen_f%C3%BCr_s%C3%A4mtliche_Garnison-Orte%2C_nebst_einer_unsf%C3%BChrlichen_Liste_aller_Truppenteile_und..._-_btv1b8440036s.jpg/1280px-thumbnail.jpg">
+    <link rel="preload" as="image" href="https://upload.wikimedia.org/wikipedia/commons/3/37/K%C3%B6nigstuhl%2C_Heidelberg%2C_U-17.jpg">
+    <link rel="preload" as="image" href="https://upload.wikimedia.org/wikipedia/commons/5/57/Leipzig_old_Rathaus%2C_circa_1900.jpg">
+    <link rel="preload" as="image" href="https://upload.wikimedia.org/wikipedia/commons/2/27/Dresden_Kreuzkirche_1900.jpg">
+    <link rel="preload" as="image" href="https://upload.wikimedia.org/wikipedia/commons/b/b4/Samariterkirche_Berlin-Friedrichshain_1900.jpg">
+    <link rel="preload" as="image" href="https://upload.wikimedia.org/wikipedia/commons/6/6b/09415-Leitmeritz-1908-Blick_auf_Leitmeritz-Br%C3%BCck_%26_Sohn_Kunstverlag.jpg">
+
 
 </head>
 <body>
     <div class="scroll-container">
-        <section class="parallax-bg snap-bottom darkFilter" id="img1">
+        <section class="rizal parallax-bg snap-bottom darkFilter">
             <h1 class="hidden">
                 Journey Of Jose Rizal 
                 <br>
@@ -35,9 +49,9 @@
             </div>
         </section>
     
-        <section id="spanishFlag" class="parallax-bg snap-center"><h1 class="hidden">Journey towards Spain</h1></section>
+        <section id="spanishFlag" class="parallax-bg snap-center darkFilter"><h1 class="hidden">Journey towards Spain</h1></section>
     
-        <section class="hidden outOfFrame snap-start">
+        <section class="hidden outOfFrame snap-center">
             <h2>Key Details of Rizal's Departure:</h2>
             <div class="flex-horizontal">
                 <ul class="flex-vertical">
@@ -50,27 +64,28 @@
     
         <section id="barcelona" class="parallax-bg snap-center" ><h1 class="hidden">Barcelona</h1></section>
     
-        <section class="hidden outOfFrame flex-vertical snap-start">
-            <h3 class="hidden outOfFrame">Upon landing on Spanish soil,</h3>
-            <p class="hidden outOfFrame">Rizal wrote essays for Diariong Tagalog under the pen name Laong Laan:</p>
-            <ul class="flex-vertical outOfFrame hidden">
+        <section class="hidden outOfFrame flex-vertical snap-start delayed">
+            <h3 class="hidden outOfFrame snap-center delayed">Upon landing on Spanish soil,</h3>
+            <p class="hidden outOfFrame delayed">Rizal wrote essays for Diariong Tagalog under the pen name Laong Laan:</p>
+            <ul class="flex-vertical outOfFrame hidden delayed">
                 <li class="delayed outOfFrame hidden"><dt>Amor Patrio</dt> <dd>(Love for the Country)</dd></li>
                 <li class="delayed outOfFrame hidden"><dt>Los Viajes</dt><dd>(The Travels)</dd></li>
                 <li class="delayed outOfFrame hidden"><dt>Revista De Madrid</dt><dd>(Review of Madrid)</dd></li>
             </ul>
+        </section>
+        <section class="sectionBreak snap-center">
             <p class="outOfFrame">In the autumn of 1882, Rizal left Barcelona for Madrid.</p>
         </section>
-    
         <section id="madrid" class="parallax-bg snap-center"><h1 class="hidden">Madrid</h1></section>
     
         <section class="outOfFrame snap-start">
             <div class="flex-vertical">
-                <h2 class="delayed">Education achievment</h2>
+                <h2 class="delayed">Educational achievment</h2>
                 <div class="flex-horizontal">
                     <ul class="outOfFrame">
                         <li class="hidden delayed"><strong>November 3, 1882:</strong> Enrolled in Universidad Central de Madrid in Medicine and Philosophy and Letters.</li>
                         <li class="hidden delayed">Studied <strong>painting and sculpture</strong> at the Academy of Fine Arts of San Fernando</li>
-                        <li class="hidden delayed"><strong>June 21, 1884:</strong> Conferred the degree of Licentiate in Medicine/li>
+                        <li class="hidden delayed"><strong>June 21, 1884:</strong> Conferred the degree of Licentiate in Medicine</li>
                         <li class="hidden delayed"><strong>June 19, 1885:</strong> Awarded Licentiate in Philosophy and Letters (with a rating of Sobresaliente or "Excellent")</li>
                     </ul>
                     <ul class="outOfFrame">
@@ -79,7 +94,7 @@
                             Written at the request of a literary society and recited at the New Year's 
                             Eve reception of Madrid Filipinos on December 31, 1882
     
-                            <blockquote class="poem" cite="https://www.kapitbisig.com/philippines/poems-written-by-dr-jose-rizal-me-piden-versos-por-dr-jose-rizal-original-text-in-spanish_622.html">
+                            <blockquote class="poem">
                                 Piden que pulse la lira<br>
                                 Ha tiempo callada y rota:<br>
                                 Si ya no arranco una nota<br>
@@ -90,8 +105,20 @@
                                 Como miente su lamento:<br>
                                 Y es que en mi triste aislamiento<br>
                                 Mi alma ni goza ni siente.<br>
-                            <cite>-Rizal from <a href="https://www.kapitbisig.com/philippines/poems-written-by-dr-jose-rizal-me-piden-versos-por-dr-jose-rizal-original-text-in-spanish_622.html">Kapit bisig</a></cite>
                             </blockquote>
+                            <blockquote class="poem">
+                                They ask me to play on a lyre<br>
+                                That long has been still and decayed,<br>
+                                But never a note have I played,<br>
+                                Nor can I the Muse re-inspire.<br>
+                                She chats without reason or fire<br>
+                                Until she has tortured my brain.<br>
+                                She chuckles to jeer at my pain;<br>
+                                She has mocked me the while I lamented.<br>
+                                In my soul, lonely, sad, and tormented,<br>
+                                Neither pleasure nor sorrow remain.<br>
+                            </blockquote>
+                            <cite>-Rizal from <a href="https://www.kapitbisig.com/philippines/poems-written-by-dr-jose-rizal-me-piden-versos-por-dr-jose-rizal-original-text-in-spanish_622.html">Kapit bisig</a></cite>
                         </li>
                     </ul>
                 </div>
@@ -108,7 +135,6 @@
                 <p class="outOfFrame">Both aroused Rizal's sympathy for the oppressed</p>
             </div>
         </section>
-        <section class="parallax-bg uncleTom"></section>
         <section id="paris" class="parallax-bg paris darkFilter snap-center"><h1 class="hidden">Paris, France (1883)</h1></section>
         <section class="parallax-bg paris snap-center">
             <p>
@@ -129,7 +155,7 @@
 
         <section class="sectionBreak snap-center">
             <p>
-                After Crossing the Rhine River Rizal arrived in Prussia to visit Germany and Austria.
+                After Crossing the Rhine, River Rizal arrived in Prussia to visit Germany and Austria.
             </p>
         </section>
 
@@ -239,12 +265,12 @@
         <section class="outOfFrame snap-center">
             <h2 class="hidden">Publishing Noli Me Tangere (1887):</h2>
             <ul class="flex-vertical">
-                <li>The winter of 1886 in Berlin was Rizal’s darkest winter due to financial difficulties</li>
-                <li>Pawned his sister Saturnina’s diamond ring to survive</li>
+                <li>The winter of 1886 in Berlin was Rizal's darkest winter due to financial difficulties</li>
+                <li>Pawned his sister Saturnina's diamond ring to survive</li>
             </ul>
         </section>
 
-        <section class="parallax-bg snap-center" id="leitmeritz">
+        <section class="parallax-bg snap-center darkFilter" id="leitmeritz">
             <h1 class="hidden"> Austria-Hungary and Beyond</h1>
         </section>
 
@@ -266,6 +292,20 @@
                 <li class="outOfFrame delayed">Munich, Stuttgart, Switzerland, and Italy</li>
                 <li class="outOfFrame delayed">June 1887: Rizal Returned to Madrid</li>
             </ul>
+        </section>
+
+        <section class="rizal parallax-bg flex-vertical-center snap-center">
+            <h3 class="outOfFrame delayed">Online sources used:</h3>
+            <address class="outOfFrame">
+                <dl>
+                    <dt>The Philippine Chamber for Czech Republic and Slovakia</dt>
+                    <dd><a href="http://philcham.eu/en/culture-and-habits/jose-rizal">http://philcham.eu/en</a></dd>
+                    <dt>Rizal in Paris by Ambeth R. Ocampo</dt>
+                    <dd><a href="https://opinion.inquirer.net/90428/rizal-in-paris">Inquirer.net</a></dd>
+                    <dt>Kapit Bisig</dt>
+                    <dd><a href="https://www.kapitbisig.com/philippines/poems-written-by-dr-jose-rizal_278.html">Kapit Bisig: Poems by Rizal</a></dd>
+                </dl>
+            </address>
         </section>
 
     </div>
